@@ -10,6 +10,7 @@ process.stdin.on('data', function(data) {
 });
 
 process.stdin.on('end', function() {
+  console.log('data end', input_stdin);
   input_stdin_array = input_stdin.split('\n');
   main();
 });
